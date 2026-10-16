@@ -1,0 +1,64 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "RestResource",
+      "connectionSettings": {
+        "type": "RestService",
+        "externalReferences": {
+          "connection": "59088c80-a9ab-44b6-895a-496b1b63822d"
+        }
+      },
+      "additionalSettings": {
+        "protocolSettings": {
+          "requestMethod": "GET",
+          "requestTimeout": "00:01:40",
+          "requestInterval": "00.00:00:00.010"
+        }
+      }
+    },
+    "destination": {
+      "type": "Json",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "9feedf77-da2b-bae5-48e4-e602b4912435",
+          "rootFolder": "Files"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00",
+      "retry": 0
+    }
+  },
+  "activities": [
+    {
+      "id": "3c5bc6ea-27e6-41b1-9e89-a7d7e3f74a32",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "relativeUrl": "?apikey=d1430369&t=batman"
+          },
+          "protocolSettings": {
+            "requestMethod": "GET",
+            "requestTimeout": "00:01:40",
+            "requestInterval": "00.00:00:00.010"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "LakehouseLocation",
+              "folderPath": "josn"
+            }
+          },
+          "storeSettings": {},
+          "formatSettings": {}
+        },
+        "enableStaging": false
+      }
+    }
+  ]
+}

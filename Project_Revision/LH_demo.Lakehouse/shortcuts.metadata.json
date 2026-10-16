@@ -1,0 +1,14 @@
+[
+  {
+    "name": "csvfiles",
+    "path": "/Files/shortcuts",
+    "target": {
+      "type": "AzureBlobStorage",
+      "azureBlobStorage": {
+        "connectionId": "b9e16ab9-77db-4d6b-a5da-d421516509c3",
+        "location": "https://sademopolandcentral.blob.core.windows.net",
+        "subpath": "/csvfiles"
+      }
+    }
+  }
+]

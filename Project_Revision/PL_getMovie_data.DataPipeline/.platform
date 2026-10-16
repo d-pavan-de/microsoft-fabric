@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "PL_getMovie_data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e0a7a07f-68d3-8f9f-42e8-934781bb5a86"
+  }
+}
