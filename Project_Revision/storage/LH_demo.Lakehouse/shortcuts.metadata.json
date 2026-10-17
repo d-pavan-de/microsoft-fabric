@@ -1,11 +1,24 @@
 [
   {
+    "name": "messy_data_from_S3_compatable",
+    "path": "/Files",
+    "target": {
+      "type": "S3Compatible",
+      "s3Compatible": {
+        "connectionId": "92f70005-e327-49b3-b827-cbe3d7072004",
+        "location": "s3://demouser-lake",
+        "subpath": "/files/source/messy_data",
+        "bucket": "demouser-lake"
+      }
+    }
+  },
+  {
     "name": "csvfiles",
-    "path": "/Files/shortcuts",
+    "path": "/Files",
     "target": {
       "type": "AzureBlobStorage",
       "azureBlobStorage": {
-        "connectionId": "b9e16ab9-77db-4d6b-a5da-d421516509c3",
+        "connectionId": "3b7254d7-3dd8-4a2e-97aa-c1411d9c0bb6",
         "location": "https://sademopolandcentral.blob.core.windows.net",
         "subpath": "/csvfiles"
       }
